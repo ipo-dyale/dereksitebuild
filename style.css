@@ -1,0 +1,187 @@
+/*
+Theme Name: J2017
+Author: Derek Yale
+Description: A simple WP theme in 2017
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+html {
+    background-color: #170017;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Open Sans, Arial, sans-serif;
+	line-height: 1.6;
+	font-size: 18px;
+	background-color: #fff;
+	color: #170017;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	background-color: #170017;
+	background-blend-mode: color;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	height: 75px;
+    -webkit-transition: 0.23s;
+    -o-transition: 0.23s;
+    transition: 0.23s;
+	z-index: 123;
+}
+
+header.sticky {
+	top: -75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	font-family: 'Oswald', 'Avant Garde', sans-serif;
+	color: #080008;
+}
+
+p {
+	font-family: 'Crimson Text', Palatino, serif;
+	color: #080008;
+}
+
+a {
+	color: #07a;
+	text-decoration: none;
+}
+a:visited {
+	color: #941352;
+}
+
+/*MENU*/
+
+#header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 20% 0 20%;
+}
+
+#header-menu ul {
+	text-transform: uppercase;
+	list-style: none;
+	margin: 0;
+}
+
+#header-menu li {
+	margin-left: 15px;
+}
+
+#header-menu li:last-child{
+	font-weight: bold;
+}
+
+#logo img {
+	background-color: #170017;
+	width: 100px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+/*TOP SECTION*/
+
+.topsection {
+	height: 66vh;
+	margin-top: 75px;
+	background-position: center;
+    background-size: cover;
+}
+
+/*NAVIGATION*/
+
+.navigation-bar {
+	height: 42px;
+	background-color: #170017;
+	background-blend-mode: color;
+	padding: 0 20% 0 20%;
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	padding: 0 1em;
+}
+
+.navright {
+	margin-left: auto;
+}
+
+.navleft {
+	margin-right: auto;
+}
+
+/*CONTENT*/
+
+.title {
+
+}
+
+.main {
+	margin: 0 18vw auto;
+	padding: 1em;
+	text-shadow: 0px 1px #fff;
+}
+
+/*FOOTER*/
+
+#site-footer {
+	height: 75px;
+	padding: 23px;
+	background-color: #170017;
+	background-blend-mode: color;
+	font-family: 'Crimson Text', Palatino, serif;
+	text-align: center;
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 1024px) {
+	
+	.main {
+		margin: 0 8vw auto;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1.33em;
+	}
+	
+	p, .date {
+		font-size: 16px;
+	}
+	
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 480px) {
+	
+	.main {
+		margin: 0 4vw auto;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1.23em;
+	}
+	
+	p, .date {
+		font-size: 15px;
+	}
+	
+}
