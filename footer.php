@@ -1,15 +1,12 @@
-</div> <!-- site container -->
-
 <?php
-$img = imagecreatefromjpeg( get_the_post_thumbnail_url( $post_id, 'thumbnail_1x1' ) );
-$rgb = imagecolorat($img, 0, 0);
-$r = ($rgb >> 16) & 0xFF;
-$g = ($rgb >> 8) & 0xFF;
-$b = $rgb & 0xFF;
+global $thumbnail_rgb;
 ?>
 
-<div id='site-footer' style="background-image: linear-gradient(0deg, rgba(<?php echo $r ?>, <?php echo $g ?>, <?php echo $b ?>, 1), rgba(<?php echo $r ?>, <?php echo $g ?>, <?php echo $b ?>, 1)); border-top: 1px solid rgb(<?php echo $r ?>, <?php echo $g ?>, <?php echo $b ?>);">
-<p style="color: rgba(<?php echo $r ?>, <?php echo $g ?>, <?php echo $b ?>, 1);">Copyright &copy; &mdash; Derek Yale 2017</p>
+    </div> <!-- main -->
+</div> <!-- site container -->
+
+<div id='site-footer' style="background-image: linear-gradient(0deg, rgba(<?php echo $thumbnail_rgb ?>, 1), rgba(<?php echo $thumbnail_rgb ?>, 1)); border-top: 1px solid rgb(<?php echo $thumbnail_rgb ?>);">
+<p style="color: rgba(<?php echo $thumbnail_rgb ?>, 1);">Copyright &copy; &mdash; Derek Yale 2017</p>
 </div>
 
 <?php wp_footer(); ?>
